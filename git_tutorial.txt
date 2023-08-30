@@ -1,0 +1,46 @@
+Git Tutorial :)
+
+
+
+Step 1: 
+git clone http://jira.caslab.queensu.ca:7990/scm/cp/cmpe320-team12.git
+- username is your student netid
+-password is your Jira password
+Cloning will make a local copy of the repository on your computer 
+
+Step 2: 
+open your terminal and go to the repository 
+(a folder on your computer called cmpe20-team12
+Command : cd ./cmpe320-team12/
+
+Step 3:
+git checkout -b meanful_branch_name
+git status to make sure you are on your branch
+Don't work on the master branch, always make a new branch 
+
+Step 4: 
+Edit, add files, do any change in the folder
+
+Step 5: 
+Add your changes using: git add --all
+This moves your files to the staging area
+
+Step 6:
+git commit -m “some explanation here”
+Commit your changes 
+This adds changes to the local repository
+
+Step 7: 
+Push you changes to the remote repository (shared with everyone)
+git push origin -u meanful_branch_name
+
+Step 8:
+Go to Bitbucket and make a pull request so people can approve your changes before you merge into the master branch 
+
+
+EXTRA:
+To check the status or to check on what branch you are: git status 
+To update your local repository with new changes from the remote repo: git pull
+When you merge your branch into the master branch (after pull request is approved) then you either delete your branch or you update it (git pull)
+If you delete your branch you can just make a new one
+**Make sure you don't work directly in the master branch
